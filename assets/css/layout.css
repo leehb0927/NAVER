@@ -1,0 +1,364 @@
+@import './reset.css';
+@import './common.css';
+/*레이아웃 클론구성*/
+
+/*header*/
+header {}
+
+
+
+
+/*group-flex1*/
+header .inner {
+    width: 1130px;
+    margin: 0 auto;
+    position: relative;
+}
+header .group-flex1 { border-bottom: 1px solid #e4e8eb;
+}
+header .group-flex1 .inner {
+        position: relative;
+        height: 160px;
+}
+header .logo {
+    width: 222px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+header .logo a {
+    display: block;
+    height: 100%;
+    background-position: 0 -158px;
+}
+
+
+
+
+
+.header .search-area { position: relative; position: absolute; top: 50%; left: 268px; margin-top: -28px;width: 582px; height: 52px; border: 2px solid #19ce60; border-radius: 2px; }
+.header .search-area .input-text { width: 444px; height: 24px; padding: 13px 15px; margin: 1px; background-color: #fff; font-size: 18px; line-height: 24px; color: #000; font-weight: 700; outline: 0; }
+.header .search-area .btn-submit { position: absolute; width: 56px; height: 56px; top: -2px; right: -2px; background: #19ce60;; }
+.header .search-area .btn-submit::before { content: ''; width: 22px; height: 22px; display: inline-block; vertical-align: top; background-position: -420px 0 }
+/*//.search-area*/
+
+
+
+
+
+.header .service-area {
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.header .service-area .bar {
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background: #ccc;
+}
+.header .service-area .link-start {
+    float: left;
+
+}
+.header .service-area .link-start::after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-position: -308px -345px;
+    vertical-align:top;
+    margin: -3px 0 0 3px;
+}
+.header .service-area .link-junior {
+    float: left;
+}
+.header .service-area .link-junior::after {
+    content: '';
+    width: 60px;
+    height: 10px;
+    display: inline-block;
+    background-position: -262px -330px;
+    margin: 3px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.header .service-area .link-bin {
+    float: left;
+}
+.header .service-area .link-bin::after {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -369px -299px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+}
+/*//service-area*/
+/*//group-flex1*/
+
+
+
+
+
+
+
+
+
+
+/*.group-flex2*/
+header .group-flex2 {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+header .group-flex2 .inner {
+    position: relative;
+    width: 1130px;
+}
+header .group-flex2 .inner::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+
+
+
+header .gnb-area {
+    float: left;
+    padding: 11px 270px 11px 0;
+}
+header .gnb-area .gnb-list {
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+}
+header .gnb-area .gnb-list::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+header .gnb-area .gnb-item {
+    float: left;
+    color: #19ce60;
+}
+header .gnb-area .gnb-item+.gnb-item {
+    margin-left: 12px;
+}
+header .gnb-list .ico-mail {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -420px -73px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+}
+header .gnb-list .ico-tv {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -444px -49px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 2px 0 0;
+}
+header .gnb-item .shoplive {
+    padding: 5px 0;
+    display: block; /*block을 넣어주지 않으면 영역이 안잡힘 padding값이 안먹음*/
+}
+header .gnb-list .shoplive::before {
+    display: inline-block;
+    width: 54px;
+    height: 20px;
+    background-position: -202px -299px;
+    content: '';
+    display: block;
+}
+header .fav-list {
+    margin-left: 12px;
+}
+header .fav-list li {}
+header .fav-list li a {
+    color: #202020;;
+}
+header .gnb-area .btn-more {
+    float: left;
+    margin-left: 17px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #202020;
+    text-align: right;
+}
+.gnb-area .btn-more:after {
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background-position: -444px -339px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-left: 7px;
+    vertical-align: 2px;
+}
+/*//.gnb-area*/
+
+
+
+
+header .group-weather {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    bottom: 0;
+    overflow: hidden;
+    max-width: 270px;
+    height: 52px;
+    text-align: right;
+}
+header .weather-wrap {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+    width: 270px;
+}
+header .weather-wrap a {
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    max-width: 100%;
+    padding: 12px 0 11px;
+    font-size: 13px;
+    line-height: 29px;
+    vertical-align: top;
+}
+header .weather-wrap a::before {
+    background-image: url(../imges/weather.png);
+    background-size: 215px 184px;
+    content: '';
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-position: -62px -62px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-right: 9px;
+}
+.weather-wrap .curr-box {
+    font-size: 13px;
+    line-height: 29px;
+    font-weight: bold;
+}
+.weather-wrap .curr-box span:first-child {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.weather-wrap .deg-box {
+    margin-left: 9px;
+    line-height: 29px;
+    font-size: 13px;
+}
+.weather-wrap .deg-box .min {
+    color: #2586ee;
+}
+.weather-wrap .deg-box .max {
+    color: #e9564a;
+}
+.weather-wrap .deg-box .max::before {
+    display: inline-block;
+    width: 5px;
+    height: 11px;
+    background-position: -444px -392px;
+    background-repeat: no-repeat;
+    content: '';
+    margin: 0 3px;
+    vertical-align: -1px;
+}
+.weather-wrap .location {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding-left: 9px;
+    font-size: 12px;
+    color: grey;
+    text-align: right;
+}
+/*//weather-area*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*container*/
+.container {
+    width: 1130px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+}
+.container::after {
+    content: ''; /*인라인으로 생성되어서 block으로 바꿔줘야함*/
+    display: block;
+    clear: both;
+}/*command+shift+1단축키로 등록해놓음*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*position-fixed button*/
+.content-top {
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    z-index: 100;
+}
+.content-top::before {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    background-position: -150px -212px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+}
+
+.btn-theme {
+    position: fixed;
+    right: 78px;
+    bottom: 19px;
+    display: inline-block;
+    width: 136px;
+    height: 53px;
+    background-position: -270px -55px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    cursor: pointer;
+    z-index: 100;
+}

@@ -1,0 +1,64 @@
+/*누구나 쓸 수 있는 공통소스를 여기에다 씁니다*/
+
+body {
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+    /*san-serif > 고딕
+    serif > 궁서
+    */
+}
+.wrapper {
+    min-width: 1190px;
+}
+
+
+
+.blind { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; margin: -1px; }
+
+
+
+
+
+
+
+
+
+
+/*주유소 1호점*/
+header .logo a,.header .search-area .btn-submit::before,.header .service-area .link-start::after,.header .service-area .link-junior::after,.header .service-area .link-bin::after,.sc-news .group-issue .link-media::after,.sc-news .set-area .btn-set.ic-list::after,.sc-news .set-area .btn-set.ic-tile::after, .sc-news .set-area .btn-set.ic-set::after,.sc-news .group-title .link-title::before,.sc-news .group-title .link-title::after,.sc-sidenews .navi .btn-navi.prev::after,.sc-sidenews .navi .btn-navi.next::after,header .gnb-area .ico-mail,header .gnb-area .ico-tv,header .gnb-list .shoplive::before,.gnb-area .btn-more:after,.sc-login .link-login .ico-naver,.sub-area .look-box::before,.sub-area .link-join::before,.pm-btn-prev .ico-btn,.pm-btn-next .ico-btn,.sc-themepost .btn-set::before,.topstroy-inner .topstroy-thumb .pm-ico-play, .sc-themepost .theme-title .title::after, .sc-themepost .btn-more-wrap .ico-more, footer .link-all::after, .content-top::before, .btn-theme, .weather-wrap .deg-box .max::before, .sc-themepost .pm-ico-play  {
+    background-image: url(../imges/download.png);
+    background-size: 457px;
+    background-repeat: no-repeat;
+}
+/*주유소 2호점*/
+.shop-wrap .shop-header .ls-link::before, .shop-wrap .shop-header .ls-link::after, .shop-wrap .shop-control .btn-prev::before, .shop-wrap .shop-control .btn-next::before, .shop-wrap .shop-page .btn.btn-prev::before,.shop-wrap .shop-page .btn.btn-next::before, .shop-wrap .group-plusdeal .link-logo::before, .shop-wrap .group-plusdeal .ico-one-plus, .shop-wrap .group-plusdeal .thumb-box+.thumb-box::before {
+    background-image: url(../imges/download-1.png);
+    background-size: 107px 101px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/*img효과*/
+.thumb-bd {
+    display: block;
+    position: relative;
+}
+.thumb-bd::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
